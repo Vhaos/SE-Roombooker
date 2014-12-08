@@ -367,3 +367,14 @@ table.dataTable thead .sorting:after {
     color: #eea236 !important; 
 }
 
+.roomCloseupHeader {
+    font-weight: bold;
+    color: #777;
+}
+
+#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+

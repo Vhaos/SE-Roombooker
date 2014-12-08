@@ -110,9 +110,6 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right"> 
-                <button class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
-                    Login
-                </button>
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -135,122 +132,101 @@
         </nav>
 
         <div id="page-wrapper">
+
             <div class="row">
-                <div class="col-lg-12" style="text-align: center">
-                    <h1 class="page-header" style="padding-bottom: 5em; font-size: 47px; color: #999; font-weight: bold; font-family: Calibri; margin: 40px 90px 20px; ">Book A Room</h1>
+                <div class="col-lg-12">
+                    <h1 class="page-header roomCloseupHeader">Nelson Mandela Lecture Theatre</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-            <div class="row" style="padding: 0 0em;">
-                <div class=" col-md-4" style="padding: 0 8em;">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-search fa-5x"></i>
+            <ul class="nav nav-tabs">
+                <li class="active"><a style="color:#449d44;" href="#tab_overview" data-toggle="tab">Info</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab_overview">
+                <div class="row" style="padding:2em 1em; ">
+                    <div class="col-lg-12">
+                        <div class="panel panel-success" >
+                            <div class="panel-body" style="padding:0px">
+                                <img src='images/Nelson_Mandela_Theatre.jpg' height="450" width="520" style="float:left">
+                                <div class="col-md-6 text-left" style="padding-left: 50px;">
+                                    <h1 style="margin-top: 1em;">Overview</h1>
                                 </div>
-                                <div class="col-xs-9 text-center">
-                                    <div>Search for the room thats right for you</div>
+                                <div class="col-md-3 text-left" style="padding-left: 50px;">
+                                    <h2><small>Features</small></h2>
+                                    <ul>
+                                        <li>Projection Screen</li>
+                                        <li>Whiteboard</li>
+                                        <li>Laptop A/V input</li>
+                                        <li>Blackout Blinds</li>
+                                        <li>Managed PC</li>
+                                        <li>Room Control</li>
+                                        <li>Controllable Heating</li>
+                                        <li>Fixed Seating</li>
+                                        <li>Telephone</li>
+                                        <li>DVD VHS Player</li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                        <a href="search.html">
-                            <div class="panel-footer">
-                                <span class="pull-left">Search</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4" style="padding: 0 8em;">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-book fa-5x"></i>
+                                <div class="col-md-3 text-left" style="padding-left: 50px;">
+                                    <h2><small>Room Information</small></h2>
+                                    <p><strong>Capacity: </strong>185</p>
+                                    <p><strong>Room type: </strong>Lecture Theatre</p>
+                                    <p><strong>Wheelchair accessible: </strong>Yes</p>
+                                    <br>
+                                    <address>
+                                        <strong>Nameless, Inc.</strong>
+                                        <br>795 Folsom Ave, Suite 600
+                                        <br>San Francisco, CA 94107
+                                        <br>
+                                        <abbr title="Phone">P:</abbr>(123) 456-7890
+                                    </address>
                                 </div>
-                                <div class="col-xs-9 text-center">
-                                    <div>Browse through the rooms you've booked</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="bookings.html">
-                            <div class="panel-footer">
-                                <span class="pull-left">My Bookings</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4"style="padding: 0 8em;">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-dashboard fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-center">
-                                    <div>Browse the rooms free right now!</div>
+                                <!-- Kareem: remember to change this to a button or input when using this as a form -->
+                                <!-- <button type="button" class="btn btn-primary">Search</button> -->
+                                <div class="col-md-7 text-right" style="">
+                                    <a href="bookings.html" class="btn btn-default pull-right">Back</a>
+                                    <a href="#" data-toggle="modal" data-target="#confirmation_modal" class="btn btn-danger pull-right">Cancel booking</a>
                                 </div>
                             </div>
                         </div>
-                        <a href="available.html">
-                            <div class="panel-footer">
-                                <span class="pull-left">Available Now</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
+                        <!-- /.col-lg-4 -->
                     </div>
                 </div>
             </div>
+            </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="panel-heading">
-                                    <h2 class="panel-title">Please Sign In</h3>
-                                </div>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form">
-                                    <fieldset>
-                                        <div class="form-group">
-                                            <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input name="remember" type="checkbox" value="Remember Me">Remember Me
-                                            </label>
-                                        </div>
-                                        <!-- Change this to a button or input when using this as a form -->
-                                        <a href="index.html" class="btn btn-success btn-block">Login</a>
-                                    </fieldset>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <p>Don't have an account? <a href="#">Sign Up</a></p>
-                            </div>
+        <!-- Modal -->
+        <div class="modal fade" id="confirmation_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Cancel Booking</h3>
                         </div>
-                        <!-- /.modal-content -->
                     </div>
-                    <!-- /.modal-dialog -->
+                    <div class="modal-body text-center">
+                        <!-- Change this to a button or input when using this as a form -->
+                        <p><strong>Are you sure you want to Cancel this room?</strong></p>
+                        <p><small>You might not be able to book this room again afterwards</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="bookings.html" class="btn btn-danger btn-block">Cancel</a>
+                        <a href="#" data-toggle="modal" data-target="#confirmation_modal" class="btn btn-default btn-block">back</a>
+                    </div>
                 </div>
-            <!-- /.modal -->
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
 
-            <footer class="bs-docs-footer" role="contentinfo">
+            <footer class="bs-docs-footer" role="contentinfo" style="margin-top:-20px">
               <div class="container">
                 <p style="margin: 0 0 2px;">Copyright © 2013 UCL (University College London). All rights reserved.</p>
                 
-                <p style="margin: 0 0 2px;">Maintained by Group 5(?), Software engineering team. Built with Bootstrap, Jquery, and java back-end</p>
+                <p style="margin: 0 0 2px;">Maintained by Group 5(?), Software engineering team. Built with Bootstrap, Jquery, with a java back-end</p>
                 
                 <p style="margin: 0 0 2px;">University College London - Gower Street - London - WC1E 6BT</p>
               </div>
@@ -268,11 +244,6 @@
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/main.js"></script>
